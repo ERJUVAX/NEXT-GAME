@@ -34,3 +34,4 @@ Você usará esse código comercialmente? Fique tranquilo que você pode usar li
 ---------------------------------
 
 Will you use this code commercially? Rest assured that you can use it freely and without having to say anything, of course I will be happy if you at least remember the help and share it with friends ^_^ . If you feel good, consider buying me a coffee -> [PicPay](https://drive.google.com/file/d/1gdOPqMZDVS8T_i8JToAUN2eQcC-Tn8qq/view?usp=sharing "PicPay") 
+# NEXT-GAME
