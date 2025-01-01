@@ -1,0 +1,326 @@
+/* Variables */
+
+:root {
+    --primary-color: #4f12d2;
+    --secondary-color: #22e625;
+    --background-color: #0d0e0e;
+    --text-color: #b7e61d;
+}
+
+/* Global Styles */
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.6;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem 2rem;
+    background: var(--primary-color);
+}
+
+header .logo img {
+    width: 100px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+/* Estilo base para los enlaces de navegación */
+
+nav ul li a {
+    display: inline-block; /* Permite usar efectos de transformación */
+    padding: 0.5rem 1rem;
+    color: #eb12aa; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+    background-color: #0078ff; /* Fondo inicial */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transiciones suaves */
+}
+
+/* Efecto al pasar el ratón */
+
+nav ul li a:hover {
+    background-color: #0056b3; /* Color más oscuro al pasar el ratón */
+    transform: scale(1.05);    /* Pequeño aumento de tamaño */
+}
+
+/* Hero Section */
+
+.hero {
+    text-align: center;
+    padding: 5rem 1rem;
+    background: linear-gradient(to right, var(--primary-color), #0056b3);
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+/* Sections */
+
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition:background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #0056b3; /* Color más oscuro al pasar el ratón */
+    transform: scale(1.05);    /* Pequeño aumento de tamaño */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    border: 2px solid #007BFF;
+            border-radius: 3px;
+            background-color: #c9ef69;
+}
+
+li {
+    margin: 0 10px;
+    position: relative; /* Necesario para posicionar los sub-menús */
+}
+
+a {
+    text-decoration: none;
+    color: #f50909;
+    cursor: pointer;
+}
+
+a:hover {
+    color: #007BFF;
+}
+
+.sub-menu {
+    display: none; /* Oculta la sub-lista inicialmente */
+    list-style-type: none;
+    position: absolute; /* Posición relativa al contenedor del padre */
+    top: 100%; /* Aparece debajo del elemento padre */
+    left: 0;
+    padding: 10px 0;
+    background-color: #d2f182;
+    border: 1px solid #665a5a;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.sub-menu li {
+    margin: 5px 0;
+}
+
+li:hover .sub-menu {
+    display: block; /* Muestra el sub-menú al pasar el cursor */
+}
+
+/* Estilo del footer */
+
+footer {
+    background-color: #2d2c2c;
+    color: rgb(105, 238, 57);
+    padding: 20px;
+    text-align: center;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-member img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid rgb(208, 248, 61);
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.team-member img:hover {
+    transform: scale(1.1);
+}
+
+.team-member p {
+    margin-top: 10px;
+    color: #ddd;
+    font-size: 14px;
+}
+
+
+/* Estilo de la sección del chatbot */
+
+#chatbot {
+    padding: 2rem;
+    background-color: #4b044e; /* Fondo claro */
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 2rem auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#chatbot h2 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    color: rgb(0, 255, 17);
+}
+
+
+/* Contenedor de chat */
+
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.chat-messages {
+    height: 100px; /* Altura del área de mensajes */
+    overflow-y: auto; /* Habilita el desplazamiento vertical */
+    border: 1px solid #61d5f8;
+    border-radius: 5px;
+    padding: 1rem;
+    background-color:rgb(96, 29, 212);
+    text-align: left;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+/* Estilo del formulario de entrada */
+
+#chat-form {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+#user-input {
+    flex: 1;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#chat-form button {
+    background-color: #0078ff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#chat-form button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Móviles (Pantallas de hasta 600px) */
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    header .logo img {
+        width: 100px; /* Reduce el tamaño del logo */
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+    }
+}
+
+/* Tablets (Pantallas entre 601px y 1024px) */
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    header .logo img {
+        width: 100px; /* Ajuste intermedio del logo */
+    }
+
+    header nav ul {
+        gap: 1rem;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+}
+
+/* Pantallas grandes (Más de 1024px) */
+
+@media (min-width: 1025px) {
+    .hero h1 {
+        font-size: 2.5rem; /* Tamaño más grande del texto */
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+}
