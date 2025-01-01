@@ -1,4 +1,5 @@
 /* Variables */
+
 :root {
     --primary-color: #4f12d2;
     --secondary-color: #22e625;
@@ -7,6 +8,7 @@
 }
 
 /* Global Styles */
+
 body {
     margin: 0;
     padding: 0;
@@ -18,6 +20,7 @@ body {
 }
 
 /* Header */
+
 header {
     display: flex;
     justify-content: space-between;
@@ -44,11 +47,13 @@ header nav ul li a {
     color: var(--secondary-color);
     font-weight: bold;
 }
+
 /* Estilo base para los enlaces de navegación */
+
 nav ul li a {
     display: inline-block; /* Permite usar efectos de transformación */
     padding: 0.5rem 1rem;
-    color: #fff; /* Color del texto */
+    color: #eb12aa; /* Color del texto */
     text-decoration: none; /* Sin subrayado */
     background-color: #0078ff; /* Fondo inicial */
     border-radius: 5px; /* Bordes redondeados */
@@ -56,12 +61,14 @@ nav ul li a {
 }
 
 /* Efecto al pasar el ratón */
+
 nav ul li a:hover {
     background-color: #0056b3; /* Color más oscuro al pasar el ratón */
     transform: scale(1.05);    /* Pequeño aumento de tamaño */
 }
 
 /* Hero Section */
+
 .hero {
     text-align: center;
     padding: 5rem 1rem;
@@ -74,6 +81,7 @@ nav ul li a:hover {
 }
 
 /* Sections */
+
 section {
     padding: 2rem;
     text-align: center;
@@ -95,21 +103,101 @@ button:hover {
     transform: scale(1.05);    /* Pequeño aumento de tamaño */
 }
 
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 1rem 0;
-    background: var(--primary-color);
-    color: var(--secondary-color);
-    font-size: 0.9rem;
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    border: 2px solid #007BFF;
+            border-radius: 3px;
+            background-color: #c9ef69;
 }
+
+li {
+    margin: 0 10px;
+    position: relative; /* Necesario para posicionar los sub-menús */
+}
+
+a {
+    text-decoration: none;
+    color: #f50909;
+    cursor: pointer;
+}
+
+a:hover {
+    color: #007BFF;
+}
+
+.sub-menu {
+    display: none; /* Oculta la sub-lista inicialmente */
+    list-style-type: none;
+    position: absolute; /* Posición relativa al contenedor del padre */
+    top: 100%; /* Aparece debajo del elemento padre */
+    left: 0;
+    padding: 10px 0;
+    background-color: #d2f182;
+    border: 1px solid #665a5a;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.sub-menu li {
+    margin: 5px 0;
+}
+
+li:hover .sub-menu {
+    display: block; /* Muestra el sub-menú al pasar el cursor */
+}
+
+/* Estilo del footer */
+
+footer {
+    background-color: #2d2c2c;
+    color: rgb(105, 238, 57);
+    padding: 20px;
+    text-align: center;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-member img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid rgb(208, 248, 61);
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.team-member img:hover {
+    transform: scale(1.1);
+}
+
+.team-member p {
+    margin-top: 10px;
+    color: #ddd;
+    font-size: 14px;
+}
+
+
 /* Estilo de la sección del chatbot */
+
 #chatbot {
     padding: 2rem;
-    background-color: #894b8b; /* Fondo claro */
+    background-color: #4b044e; /* Fondo claro */
     border-radius: 10px;
-    max-width: 600px;
+    max-width: 500px;
     margin: 2rem auto;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -118,15 +206,12 @@ footer {
 #chatbot h2 {
     margin-bottom: 1rem;
     font-size: 1.8rem;
-    color: blue;
+    color: rgb(0, 255, 17);
 }
 
-/* Cambia el tamaño de la imagen dentro de .botsito */
-.chatbot .botsito jpg {
-    width: 100px; /* Reduce el tamaño de la imagen */
-}
 
 /* Contenedor de chat */
+
 .chat-container {
     display: flex;
     flex-direction: column;
@@ -139,13 +224,14 @@ footer {
     border: 1px solid #61d5f8;
     border-radius: 5px;
     padding: 1rem;
-    background-color:rgb(200, 149, 200);
+    background-color:rgb(96, 29, 212);
     text-align: left;
     font-size: 0.9rem;
     color: #333;
 }
 
 /* Estilo del formulario de entrada */
+
 #chat-form {
     display: flex;
     gap: 1rem;
@@ -157,14 +243,14 @@ footer {
     padding: 0.5rem;
     font-size: 1rem;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 4px;
 }
 
 #chat-form button {
     background-color: #0078ff;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
     padding: 0.5rem 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
@@ -176,6 +262,7 @@ footer {
 }
 
 /* Móviles (Pantallas de hasta 600px) */
+
 @media (max-width: 600px) {
     header {
         flex-direction: column;
@@ -204,15 +291,13 @@ footer {
         font-size: 0.9rem;
         padding: 0.4rem 0.8rem;
     }
-    chatbot .botsito jpg {
-        width: 50px; /* Reduce el tamaño de la imagen  botsito */
-    }
 }
 
 /* Tablets (Pantallas entre 601px y 1024px) */
+
 @media (min-width: 601px) and (max-width: 1024px) {
     header .logo img {
-        width: 140px; /* Ajuste intermedio del logo */
+        width: 100px; /* Ajuste intermedio del logo */
     }
 
     header nav ul {
@@ -225,6 +310,7 @@ footer {
 }
 
 /* Pantallas grandes (Más de 1024px) */
+
 @media (min-width: 1025px) {
     .hero h1 {
         font-size: 2.5rem; /* Tamaño más grande del texto */
@@ -237,7 +323,4 @@ footer {
     button {
         font-size: 1rem;
     }
-}
-contacto .NextGameBot img {
-    width: 140px; /* Ajuste intermedio del logo */
 }
