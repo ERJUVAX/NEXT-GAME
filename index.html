@@ -5,23 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Next Game</title>
     <link rel="stylesheet" href="css/styles.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>-->
 </head>
 <body>
 
-    <!-- Encabezado -->
+    <!-- Barra de navegacion -->
 
     <header>
         <div class="logo">
-            <img src="Images/logo.png" alt="Next Game">
+            <img src="images/logo.png" alt="Next Game">
         </div>
         <nav>
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#chatbot">Chatbot</a></li>
-               <!-- <li><a href="#encuestas">Encuestas</a></li> -->
+                <li><a href="#lista-opciones">GDD</a></li>
                 <li><a href="#noticias">Noticias</a></li>
-                <li><a href="#team">Team</a></li>
+                <li><a href="#juegos">Juegos</a></li>
+                <li><a href="#desarrolladores">Desarrolladores</a></li>
             </ul>
         </nav>
     </header>
@@ -33,8 +34,9 @@
         <p>Diseña tu propio videojuego y crea el futuro de los videojuegos con nosotros.</p>
     </section>
     
-    <!--desarrollo de gdd-->
-
+    <!--Generador de gdd-->
+<section>
+    <h2>¡DISEÑA y DESCARGA TU DOCUMENTO DE DISEÑO Y COMIENZA A DESARROLLAR TU PROPIO VIDEOJUEGO!</h2>
     <ul id="lista-opciones">
         <li>
             <a href="#genero">GENERO</a>
@@ -70,24 +72,22 @@
             </ul>
         </li>
     </ul>
-    
-    <section id="gdd">
-        <h2>¡DESCARGA TU DOCUMENTO DE DISEÑO Y COMIENZA A DESARROLLAR TU PROPIO VIDEOJUEGO!</h2>
+</section>
+
+    <section id="gdd"> 
         <form action="#" method="POST">
-            <input type="text" name="nombre" placeholder="Tu Nombre" required>
-            <input type="email" name="email" placeholder="Tu email" required>
+            <input type="text" name="nombre" placeholder="Tu Nombre" >
+            <input type="email" name="email" placeholder="Tu email" >
                 <button id="generar-pdf">PDF</button>
         </form>
             </section>
         </section>
     </div>
-    <div>
-    <img src="Images/NextGameBot.png" alt="Next Game">
-</div>
 
  <!-- Sección de chatbot -->
 
  <section><h2>Next Game Bot</h2></section>   
+ 
             <section id="chatbot">
                 <h2>Interacción con Next Game Bot para un diseño personalizado</h2>
                 <div class="chat-container">
@@ -103,40 +103,54 @@
                     <script src="js/script.js"></script>
                 </div>
                 <form action="#" method="POST">
-                    <input type="text" name="nombre" placeholder="Tu Nombre" required>
-                    <input type="email" name="email" placeholder="Tu email" required>
+                    <input type="text" name="nombre" placeholder="Tu Nombre" >
+                    <input type="email" name="email" placeholder="Tu email" >
                         <button type="submit">PDF</button>
             </section>
-           
-            
-    <!-- Sección de encuestas 
-
-    <section id="encuestas">
-        <h2>Encuestas y Opiniones</h2>
-        <p>Comparte tus gustos y ayúdanos a diseñar videojuegos increíbles.</p>
-        <button>Participar Ahora</button>
-    </section>
--->
+                   
     <!-- Sección de noticias -->
 
     <section id="noticias">
-        <h2>Últimas Noticias</h2>
-        <div class="noticias-container">
-        
-                <h2>Games</h2>
-                <div><script src="https://cdn.htmlgames.com/embed.js?game=ChristmasBuster&amp;bgcolor=white"></script></div>
-                <div><script src="https://cdn.htmlgames.com/embed.js?game=Daily2Queens&amp;bgcolor=white"></script></div>
-            </section>
-            <section id="team">
-                <footer>
+        <h2>Noticias de este mes</h2>
+        <img src="images/gameAwards.png" alt="Next Game">
+        <p>publicaremos los principales lanzamientos de los game awards para este 2025</p>
+    </section>
+
+    <!-- Sección de juegos -->
+  
+    <section id="juegos">
+        <h2>Juegos</h2>
+        <div class="slider-container">
+            <div class="slider-box">
+                <ul class="juegos-container">
+                    <!-- Primer Set de Juegos -->
+                    <li>
+                        <div><script src="https://cdn.htmlgames.com/embed.js?game=ChristmasBuster&amp;bgcolor=white"></script></div>
+                    </li>
+                    <li>
+                        <div><script src="https://cdn.htmlgames.com/embed.js?game=DoubleKlondike&amp;bgcolor=white"></script></div>
+                    </li>
+                    <li>
+                        <div><script src="https://cdn.htmlgames.com/embed.js?game=TowerCrush&amp;bgcolor=white"></script></div>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+            <!--team-->
+
+        <footer>
+            <section id="desarrolladores">
                     <h2>Equipo de Desarrollo</h2>
-                    <div class="team-container">
+                    <div class="desarrolladores-container">
 
                         <!-- Miembro 1 -->
 
                         <div class="team-member">
                             <a href="https://www.linkedin.com/in/ernesto-julian-valladares-vargas-957071256/" target="_blank">
-                                <img src="Images/Erjuvax.png" alt=" Next Game">
+                                <img src="images/Erjuvax.png" alt=" Next Game">
                             </a>
                             <p>Ing.Sistemas Computacionales Ernesto Julian Valladares Vargas.</p>
                         </div>
@@ -145,7 +159,7 @@
 
                         <div class="team-member">
                             <a href="https://sitio-miembro2.com" target="_blank">
-                                <img src="Images/botsy.png" alt="Next Game">
+                                <img src="images/botsy.png" alt="Next Game">
                             </a>
                             <p>Lic.en Comunicación Daniela Ruby Payán Ortiz.</p>
                         </div>
@@ -154,7 +168,7 @@
 
                         <div class="team-member">
                             <a href="https://sitio-miembro3.com" target="_blank">
-                                <img src="Images/botsy.png" alt="Next Game">
+                                <img src="images/botsy.png" alt="Next Game">
                             </a>
                             <p>Ing.Industrial Luis Maximiliano Garibay Villarreal. </p>
                         </div>
@@ -162,8 +176,8 @@
                         <!--Miembro 4-->
 
                         <div class="team-member">
-                            <a href="https://sitio-miembro4.com" target="_blank">
-                                <img src="Images/botsy.png" alt="Next Game">
+                            <a href="https://www.linkedin.com/in/andrea-marysol-42a3232a6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                                <img src="images/botsy.png" alt="Next Game">
                             </a>
                             <p>Lic.en Administracion de TI David Alejandro Arana Zamorano. </p>
                         </div>
@@ -172,7 +186,7 @@
 
                         <div class="team-member">
                             <a href="https://www.linkedin.com/in/arturo-del-angel-116692257/" target="_blank">
-                                <img src="Images/botsy.png"  alt="Next Game">
+                                <img src="images/botsy.png"  alt="Next Game">
                             </a>
                             <p>Ing.en Sistemas Computacionales Arturo Daniel del Angel Martínez . </p>
                         </div>
@@ -181,22 +195,23 @@
 
                          <div class="team-member">
                             <a href="https://sitio-miembro4.com" target="_blank">
-                                <img src="Images/botsy.png" alt="Next Game">
+                                <img src="images/botsy.png" alt="Next Game">
                             </a>
-                            <p>Ing.en Sistemas Niver Asaid Martinez Hernandez. </p>
+                            <p>Ing.en Sistemas Computacionales Niver Asaid Martinez Hernandez. </p>
                         </div>
 
                         <!--Miembro 7-->
 
                         <div class="team-member">
-                            <a href="https://www.linkedin.com/in/andrea-marysol-42a3232a6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
-                                <img src="Images/botsy.png" alt="Next Game">
+                            <a href="https://sitio-miembro4.com" target="_blank">
+                                <img src="images/botsy.png" alt="Next Game">
                             </a>
-                            <p>Lic. Marketing Andrea  Fernandez Gonzalez. </p>
+                            <p>Lic. en Mercadotecnia Andrea  Fernandez Gonzalez. </p>
                         </div>
                     </div>
             </section>
         </footer>
+        <script src="script.js"></script>
 </body>
 </html>
                 
