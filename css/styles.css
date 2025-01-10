@@ -103,26 +103,37 @@ button:hover {
     transform: scale(1.05);    /* Pequeño aumento de tamaño */
 }
 
-ul {
-    list-style-type: none;
+/*generador de gdd*/
+
+.lista-de-opciones {
+    list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
     justify-content: center;
     position: relative;
-    border: 2px solid #007BFF;
+    border: 2px solid #02f3ef;
             border-radius: 3px;
-            background-color: #c9ef69;
+            background-color: #0056b3;
 }
 
 li {
-    margin: 0 10px;
-    position: relative; /* Necesario para posicionar los sub-menús */
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    display: inline-block;
+    justify-content: center;
+    position: relative;
+    border: 1px solid #0056b3;
+            border-radius: 4px;
+            background-color: #0056b3; /* Necesario para posicionar los sub-menús */
 }
 
 a {
     text-decoration: none;
-    color: #f50909;
+    color: #edf9f2;
     cursor: pointer;
 }
 
@@ -130,6 +141,7 @@ a:hover {
     color: #007BFF;
 }
 
+/* estilos de los sub menus*/
 .sub-menu {
     display: none; /* Oculta la sub-lista inicialmente */
     list-style-type: none;
@@ -137,8 +149,8 @@ a:hover {
     top: 100%; /* Aparece debajo del elemento padre */
     left: 0;
     padding: 10px 0;
-    background-color: #d2f182;
-    border: 1px solid #665a5a;
+    background-color: #d1f18202;
+    border: 1px solid #665a5a00;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 10;
 }
@@ -151,10 +163,55 @@ li:hover .sub-menu {
     display: block; /* Muestra el sub-menú al pasar el cursor */
 }
 
-/* Estilo del footer */
+/*seccion de juegos*/
+/* efecto carrusel */
+.slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden; /* Ocultar lo que sale del contenedor */
+}
+
+.slider-box {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.juegos-container {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    animation: slide 5s, linear infinite ease-in-out; /* Desplazamiento continuo */
+}
+
+.juegos-container li {
+    min-width: 100%; /* Aseguramos que cada juego ocupe todo el ancho visible */
+    box-sizing: border-box;
+}
+
+/* Animación del desplazamiento */
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%); /* Desplazamiento hasta el siguiente juego */
+    }
+}
+
+
+
+
+
+
+/* Estilo del equipo de desarrollo */
 
 footer {
-    background-color: #2d2c2c;
+    background-color: #2e3db037;
     color: rgb(105, 238, 57);
     padding: 20px;
     text-align: center;
@@ -260,6 +317,8 @@ footer {
     background-color: #0056b3;
     transform: scale(1.05);
 }
+
+/* a partir de aqui comienza el diseño responsivo*/
 
 /* Móviles (Pantallas de hasta 600px) */
 
