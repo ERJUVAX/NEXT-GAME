@@ -1,7 +1,24 @@
-const chatForm = document.getElementById('chat-form');
+/*const chatForm = document.getElementById('chat-form');
 const chatMessages = document.querySelector('.chat-messages');
-const userInput = document.getElementById('user-input');
+const userInput = document.getElementById('user-input')*/
 
+document.addEventListener("DOMContentLoaded", () => {
+    const sliderBox = document.querySelector(".juegos-container");
+
+    sliderBox.addEventListener("mouseenter", () => {
+        sliderBox.style.animationPlayState = "paused";
+    });
+
+    sliderBox.addEventListener("mouseleave", () => {
+        sliderBox.style.animationPlayState = "running";
+    });
+});
+
+
+
+
+
+/*
 // Simulación de respuesta del chatbot
 
 function getChatbotResponse(userMessage) {
@@ -73,3 +90,5 @@ document.getElementById("generar-pdf").addEventListener("click", () =>
 
     pdf.save("opciones_diseño.pdf");
 });
+
+*/
