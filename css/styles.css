@@ -1,10 +1,10 @@
 /* Variables */
 
 :root {
-    --primary-color: #4f12d2;
+    --primary-color: #1cf408;
     --secondary-color: #22e625;
-    --background-color: #0d0e0e;
-    --text-color: #b7e61d;
+    --background-color: #eff6f6;
+    --text-color: #060900;
 }
 
 /* Global Styles */
@@ -133,7 +133,7 @@ li {
 
 a {
     text-decoration: none;
-    color: #edf9f2;
+    color: #06f469;
     cursor: pointer;
 }
 
@@ -211,7 +211,7 @@ li:hover .sub-menu {
 /* Estilo del equipo de desarrollo */
 
 footer {
-    background-color: #2e3db037;
+    background-color: #27ae45be;
     color: rgb(105, 238, 57);
     padding: 20px;
     text-align: center;
@@ -243,7 +243,7 @@ footer {
 
 .team-member p {
     margin-top: 10px;
-    color: #ddd;
+    color: #0e0d0d;
     font-size: 14px;
 }
 
@@ -252,7 +252,7 @@ footer {
 
 #chatbot {
     padding: 2rem;
-    background-color: #4b044e; /* Fondo claro */
+    background-color: #0ee307a5; /* Fondo claro */
     border-radius: 10px;
     max-width: 500px;
     margin: 2rem auto;
@@ -263,7 +263,7 @@ footer {
 #chatbot h2 {
     margin-bottom: 1rem;
     font-size: 1.8rem;
-    color: rgb(0, 255, 17);
+    color: rgb(2, 93, 240);
 }
 
 
@@ -281,7 +281,7 @@ footer {
     border: 1px solid #61d5f8;
     border-radius: 5px;
     padding: 1rem;
-    background-color:rgb(96, 29, 212);
+    background-color:rgb(232, 231, 235);
     text-align: left;
     font-size: 0.9rem;
     color: #333;
