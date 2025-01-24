@@ -34,6 +34,7 @@ header .logo img {
     width: 100px;
 }
 
+
 header nav ul {
     list-style: none;
     display: flex;
@@ -246,7 +247,44 @@ footer {
     color: #0e0d0d;
     font-size: 14px;
 }
+/*slider*/
+.slider
+ {
+    width: 100%; /* Ajusta el ancho del slider (% del ancho de la pantalla) */
+    height: 0.1vh; /* Ajusta el alto del slider (% del alto de la pantalla) */
+    position: relative;
+    bottom:0; /* Oculta el contenido que sale del área visible */
+    background-color: rgba(219, 222, 220, 0); /* Fondo del slider */
+    border: 1px solid rgba(11, 237, 90, 0); /* Agrega un borde opcional para visibilidad */
+}
 
+.slider .slide-track 
+{
+    display: flex;
+    animation: scroll 10s linear infinite;
+}
+
+.slider .slide
+ {
+    width: 100%; /* Coincide con el ancho del slider */
+}
+
+.slider .slide img
+{
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho disponible */
+    height:40%; /* Asegura que la imagen ocupe todo el alto disponible */
+    object-fit: fill; /* Ajusta la imagen para que encaje bien */
+}
+
+@keyframes scroll 
+{
+    0% {
+        transform: translateX(0); /* Comienza en la posición inicial */
+    }
+    100% {
+        transform: translateX(-200%); /* Se desplaza dos veces el ancho */
+    }
+}
 
 /* Estilo de la sección del chatbot */
 
